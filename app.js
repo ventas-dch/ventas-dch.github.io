@@ -68,7 +68,7 @@ function mostrar(user) {
 
     if (user.emailVerified) {
         dropdown.innerHTML = `
-        <li><a href="#!" ><i class="material-icons">account_circle</i>Perfil</a></li>
+        <li><a href="#!" onclick="check()"><i class="material-icons">account_circle</i>Perfil</a></li>
         <li><a href="#!" onclick="cerrarSesion()"><i class="material-icons">close</i>Cerrar Sesion</a></li>
         `;
         campo.innerHTML = `
@@ -157,6 +157,14 @@ function verificar() {
         console.log("Enviando...")
     }).catch(function (error) {
         console.log(error);
+    });
+}
+function check(){
+    swal({
+        title: "Lo sentimos!",
+        text: "Esta seccion aun esta en desarrollo!",
+        icon: "error",
+        button: "OK",
     });
 }
 
