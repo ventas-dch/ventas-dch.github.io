@@ -74,7 +74,7 @@ function mostrar(user) {
         campo.innerHTML = `
         <div class="col l14 offset-l3">
             <div class="card-panel center transparent" style="border-radius: 200px;">
-                Hola te damos la bienvenida, <a href="#" class="alert-link">${user.email}</a>. Te invitamos a que pueda ver nuestro catalogo!
+                Hola te damos la bienvenida, <a href="#" class="alert-link">${user.email}</a>. Te invitamos a que puedas ver nuestro catalogo!
             </div>
         </div>
         
