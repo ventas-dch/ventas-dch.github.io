@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap" rel="stylesheet">
+    <title> DCH Ventas</title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyC8opUCemrtjtveEfuYfu6YwIZc8SXd2lc",
+            authDomain: "usuarios-72650.firebaseapp.com",
+            projectId: "usuarios-72650",
+            storageBucket: "usuarios-72650.appspot.com",
+            messagingSenderId: "417796896533",
+            appId: "1:417796896533:web:dda358e45b591066475b1c"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+</head>
+
+<body style="font-family: 'Passion One', cursive; background: url(img/brick-wall.png);">
+
+    <head>
+
+    </head>
+    <main>
+        <nav>
+            <div class="nav-wrapper  blue darken-2" style="background: url(img/black-felt.png);">
+
+                <a href="" style="margin-left: 5px;" class="brand-logo hide-on-med-and-down">DCH Ventas
+                    <i data-target="slide-out" class="material-icons sidenav-trigger right">computer</i></a>
+                <a href="" style="margin-left: 5px;" class="brand-logo left hide-on-large-only">DCH
+                    <i data-target="slide-out"
+                        class="material-icons sidenav-trigger right hide-on-large-only">menu</i></a>
+                <ul id="nav-mobile" class="right">
+                    <li><a class="dropdown-trigger" data-target='dropdown'>
+                            <i class="material-icons">arrow_drop_down</i></a></li>
+                </ul>
+                <ul id="nav-mobile" class="right show-on-small">
+                    <li><a class="dropdown-trigger" data-target='dropdown1'>
+                            <i class="material-icons">event_note</i></a></li>
+                </ul>
+                <ul id="nav-mobile" class="right show-on-small">
+                    <li><a class="dropdown-trigger" data-target='dropdown2'>
+                            <i class="material-icons">person_outline</i></a></li>
+                </ul>
+                <ul id="slide-out" class="sidenav"
+                    style="background: url(img/brick-wall.png); border-radius: 35px; margin-top: 10px;">
+                    <li>
+                        <div class="user-view" style="padding: 15px;">
+                            <div class="background blue darken-2" style="border-radius: 35px;">
+                                <img src="img/black-felt.png">
+                            </div>
+                            <a href="#user"><img class="circle left" src="img/pp.jpg"><i
+                                    style="margin-left: 75px;"><u>David Diaz</u> </i></a>
+                            <h6 style="background: url(img/black-felt.png); border-radius: 8px; margin-left: 70px;">
+                                diaz_david@hotmail.cl</h6>
+
+                        </div>
+                    </li>
+                    <ul class="white" style="background: url(img/black-felt.png); border-radius: 25px;">
+                        <li><a href="#!"><i class="material-icons">cloud</i>Firebase</a></li>
+                        <li><a href="#!"><i class="material-icons">extension</i>CSS</a></li>
+                        <li><a href="#!"><i class="material-icons">code</i>JavaScript</a></li>
+                    </ul>
+                </ul>
+            </div>
+        </nav>
+        <br>
+        <div class="row">
+            <div class="col l10 offset-l1">
+                <div class="card-panel white" style="background: url(img/brick-wall.png);">
+                    <h1>Bienvenidos!</h1>
+                    <h5><a href="#" class="tooltipped" data-position="right"
+                            data-tooltip="Sitio Web de ventas de telefonos.">Sitio Web Ventas</a></h5>
+                    <h4>Te invito a registrate para conocer nuestros productos!</h4>
+                    <a href="#" class="right tooltipped" data-position="top"
+                        data-tooltip="Para gestionar tu compra !ve al icono de whatsapp y envianos un mensaje¡">
+                        <u>Como comprar?</u></a>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div id="campo" class="row center" role="alert">
+   
+        </div>
+        
+
+        <div class="row">
+            <div class="container">
+                <ul class="collapsible" style="background: url(img/brick-wall.png);">
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">people</i>Dueños</div>
+                        <div class="collapsible-body">
+                            <h6>Quienes somos?</h6>
+                            <h6><a>DCH ventas, se especializa en la ventas de telefonos.</a></h6>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">place</i>Ubicacion</div>
+                        <div class="collapsible-body">
+                            <h6>De donde somos?</h6>
+                            <h6><a>Trabajamos en distintas regiones, principal mente de la Metropolitana y del
+                                    Maule.</a></h6>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">redeem</i>Envios</div>
+                        <div class="collapsible-body">
+                            <h6>Hacemos envios?</h6>
+                            <h6><a>Si, hacemos envios por cobrar a todas las regiones del pais.</a></h6>
+                            <h6><a>CHILEXPRESS O STARKEN.</a></h6>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+
+
+
+        <div id="contenedor" class="row"></div>
+
+
+
+
+        <div id="dropdown1" style="border-radius: 20px; background: url(img/brick-wall.png);"
+            class="card-panel dropdown-content white">
+            <h6 style="color: black;">Registrate aqui!</h6>
+            <input style="color: brown;" id="email" type="text" placeholder="Ingrese su correo">
+            <br>
+            <input id="clave" type="password" placeholder="Ingrese una clave">
+            <button id="btn" class="btn green">Enviar</button>
+        </div>
+        <div id="dropdown2" style="border-radius: 20px; background: url(img/brick-wall.png);"
+            class="card-panel dropdown-content white">
+            <h6 style="color: black;">Iniciar Sesion!</h6>
+            <input style="color: brown;" id="email1" type="text" placeholder="Ingrese su correo">
+            <br>
+            <input id="clave1" type="password" placeholder="Ingrese una clave">
+            <button id="btn1" class="btn green">Ingresar</button>
+        </div>
+        <ul id='dropdown' class='dropdown-content'></ul>
+        <!-- WhatsApp -->
+        <div class="row">
+
+            <div style="border-radius: 20px; background: url(img/brick-wall.png);" id='dropdown3'
+                class="card-panel dropdown-content white">
+                <h6 style="width: 200px;">Gestiona tu compra aqui!</h6>
+                <textarea style="height: 40px;" name="text" id="nombre" cols="30" rows="10"
+                    placeholder="Ingrese su nombre"></textarea>
+                <br>
+                <textarea style="height: 140px;" name="text" id="mensaje" cols="30" rows="10"
+                    placeholder="Ingrese un mensaje"></textarea>
+                <br><br>
+                <button id="btn2" class="btn green">Enviar</button>
+            </div>
+
+        </div>
+        <div class="fixed-action-btn">
+            <a class="dropdown-trigger btn-floating btn-large" style="background-color: transparent;"
+                data-target="dropdown3">
+                <img src="img/whatsapp.png" class="responsive-img">
+            </a>
+
+        </div>
+
+
+
+    </main>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-auth.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+    <script>
+        var btn2 = document.getElementById("btn2");
+
+
+        btn2.addEventListener('click', enviarMensaje)
+        function enviarMensaje() {
+            var nombre = document.getElementById("nombre").value;
+            var mensaje = document.getElementById("mensaje").value;
+            document.getElementById("nombre").value = "";
+            document.getElementById("mensaje").value = "";
+
+
+            var url = "https://api.whatsapp.com/send?phone=56964355855&text=Nombre: %0A" + nombre + "%0A%0AMensaje: %0A" + mensaje + "%0A";
+            window.open(url);
+
+        }
+
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.dropdown-trigger');
+            var instances = M.Dropdown.init(elems, {
+                hover: true,
+                closeOnClick: false,
+                constrainWidth: false,
+                coverTrigger: false
+            });
+            var elems = document.querySelectorAll('.fixed-action-btn');
+            var instances = M.FloatingActionButton.init(elems);
+            var elems = document.querySelectorAll('.tooltipped');
+            var instances = M.Tooltip.init(elems, {
+                marginRight: 10
+            });
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+            var elems = document.querySelectorAll('.collapsible');
+            var instances = M.Collapsible.init(elems);
+
+        });
+    </script>
+</body>
+
+</html>
