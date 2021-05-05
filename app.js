@@ -130,6 +130,20 @@ function mostrar(user) {
                 </div>
                 
             </div>
+            <br>
+            <div class="row">
+                <div class="col l10 offset-l1">
+                    
+                    <div class="card-panel white center" style="background: url(img/brick-wall.png);">
+                        <h4>MacBook Pro</h4>
+                        <img src="img/mac.png" class="responsive-img">
+                        <br>
+                        <h4><a>Precio: 300.000</a></h4>
+                    </div>
+
+                </div>
+                
+            </div>
     
         `;
         
